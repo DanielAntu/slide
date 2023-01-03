@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>slide JS</title>
+    <style>
+        .img {
+            margin: auto;
+            position: relative;
+            max-width: 500px;
+        }
+
+        .img img {
+            width: 100%;
+            position: absolute;
+            opacity: 0.4s;
+            max-width: 700px;
+        }
+
+        .pri {
+            opacity: 1;
+        }
+
+        .seg, .ter {
+            opacity: 0;
+        }
+
+        .bullets {
+            position: absolute;
+            top: 470px;
+            left: 300px;
+        }
+
+        .bullets-single {
+            background-color: rgb(209, 205, 205);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Slide JS</h1>
+    <div class="img">
+        <img src="imagens/imagen1.jpg" alt="" class="pri">
+        <img src="imagens/imagem2.jpg" alt="" class="seg">
+        <img src="imagens/imagem3.jpg" alt="" class="ter">
+    </div>
+    <div class="bullets">
+        <div class="bullets-single active"></div>
+        <div class="bullets-single"></div>
+        <div class="bullets-single"></div>
+    </div>
+</body>
+</html>
